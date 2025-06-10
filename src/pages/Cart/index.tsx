@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../contexts/CartContext"
 
-import EmptyCart from '/empty-cart.png'
+// import EmptyCart from '/empty-cart.png'
 
 export const Cart = () => {
     const { cart, removeProductFromCart } = useContext(CartContext)
@@ -21,7 +21,7 @@ export const Cart = () => {
         </ul>
         {cart.length === 0 && <>
                 <p>Não possui itens no carrinho</p>
-                <img src={EmptyCart}/>
+                <img src={'/*emptyCart*/'}/>
         
         </>}
         </>
