@@ -1,9 +1,9 @@
-import CamisetaPreta from '/camiseta-1.png'
-import CamisetaPretaCostas from '/camiseta-1-costas.png'
-import CamisetaRoxa from '/camiseta-2.png'
-import CamisetaRoxaCostas from '/camiseta-2-costas.png'
-import Caneca from '/caneca-1.png'
-import CanecaCostas from '/caneca-2.png'
+import CamisetaPreta from '/camiseta-preta.png'
+import CamisetaPretaCostas from '/camiseta-preta-costas.png'
+import CamisetaRoxa from '/camiseta-roxa.png'
+import CamisetaRoxaCostas from '/camiseta-roxa-costas.png'
+import Caneca from '/caneca-branca-2.png'
+import CanecaCostas from '/caneca-branca-1.png'
 
 export const products = [
   {

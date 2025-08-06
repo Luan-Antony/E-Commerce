@@ -1,6 +1,9 @@
 import { useParams } from "react-router-dom"
 import { products } from "../../mocks"
 
+import { Container } from "../../styles/GlobalStyle"
+import { Div } from "./styles"
+
 export const ProductDetail = () => {
     const { id } = useParams()
 
@@ -9,18 +12,30 @@ export const ProductDetail = () => {
 
     return (
         <>
-            <p>{filteredProduct?.name}</p>
-            <img src={filteredProduct?.image} alt={filteredProduct?.name} />
+            <Container>
+                <Div className="product">
+                    <div className="image">
+                        <img src={filteredProduct?.image} alt={filteredProduct?.name} />
+                    </div>
 
-            <p>Produtos semelhantes</p>
+                    <div className="info">
+                        <p>{filteredProduct?.name}</p>
+                        <p>Cor: {filteredProduct?.color}</p>
+                        <p>Tamanho: {filteredProduct?.size}</p>
+                        <p>R$ {filteredProduct?.price},00</p>
+                        <p>{filteredProduct?.description}</p>
+                    </div>
+                </Div>
 
-            <ul>
+                {/* <ul>
                 {similarProducts.map(product => (
                     <li key={product.id}>
                         <img src={product.image} alt={product.name} />
                     </li>
                 ))}
-            </ul>
+            </ul> */}
+
+            </Container>    
         </>
     )
 }

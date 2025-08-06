@@ -9,6 +9,6 @@ export const Content = styled.section`
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 32px;
-
-
+    width: 100%;
+    margin: 0 auto;
 `
