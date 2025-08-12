@@ -1,16 +1,14 @@
 import { AppRoutes } from "./pages/routes"
 import { GlobalStyle } from "./styles/GlobalStyle"
 import { BrowserRouter } from "react-router-dom"
-import { CartProvider } from "./contexts/CartContext"
+
 
 function App() {
   return (
-    <CartProvider>
       <BrowserRouter>
         <GlobalStyle />
         <AppRoutes />
       </BrowserRouter>
-    </CartProvider>
   )
 }
 
